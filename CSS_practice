@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		em {font-weight: bold; color: blueviolet;padding: 10px;}
+		h1 {font-family: Zapfino, sans-serif,; color: #1d3557; }
+		body {background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); font-size: 16pt; font-family: emoji,sans-serif; color: #283618;}
+		p {font-size: 12pt; font-family: serif;}
+		.extra span {color: inherit;}
+	</style>
+<body>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<h1 style="text-align: center;">This is</div></h1>
+<form>
+	<label>Color:<input type = "color" autofocus /></label>
+	<br><label>Date:<input type="date"></label>
+	<br><label>Datetime-local: <input type="time"></label>
+	<br><label>Email:<input type="mail" placeholder="name@domian.com" required>
+	<br><form action="/action_page.php"><label>Number:</label><input type="number" min="1" max="7">(Enter a number between 0 and 7)
+	<br><label>Range(between 0-10):</label>
+	<input type="range" min="0" max="10">
+</form>
+<br><br>
+	<em>Highlight</em>
+	<p>contirbute by coolcoolcooooool :)</p>
+
+
+</body>
+</html>
