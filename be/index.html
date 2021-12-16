@@ -93,6 +93,7 @@
         <!-- =============== container-fluid =============== -->
     </nav>
     <!-- =============== header =============== -->
+    <section>>
     <header id="home" class="header">
 		<!-- =============== container =============== -->
         <div class="container">
@@ -114,7 +115,7 @@
             </textarea>
 
         <br><label>E-mail Adress:<input type="mail"></label>
-        <br><label>Date:<Input type="date">
+        <br><label>Date:<Input type="date"></Input>
         <br><b>Things you like:</b>
         <br><form action = "/action_page.php" method= "get">
             <input type="checkbox" name= "liked" value="links">Links
@@ -137,14 +138,9 @@
         <br><br>
             <input type="submit" value = "submit">
             <input type="reset" value="clear">
-        </form>
-		
-
-		<!-- =============== container end =============== -->
-    </header>
-
-		<!-- =============== container =============== -->
-
+        </form></form>
+        </header>
+        <section>
         <form class="lab2" >
             <h1 style="color: darkgray;">Lab2</h1>
             <label>Color:<input type = "color" autofocus /></label>
@@ -156,15 +152,91 @@
             <em>Highlight</em>
             <p>contirbute by coolcoolcooooool :)</p>
         </form>
-        
+        </section>
 
             </div>
-        </div>   
+        </div>  
 		<!-- =============== container end =============== -->		
-    </section>
-	
+    
+	<section id="about" class="header2">
+    <!-- =============== container =============== -->
+    <br><br><br><br><br><br>
+
+    <table style="border:3px #cccccc solid; padding: 1em; margin-left: 50%;" >
+        <form>
+        <tbody>
+            <th style="background-color: orange; padding: 10px; " colspan="3">Profolio-109305077</th>
+            <tr>
+            <th rowspan= "3" >
+                <img src = "https://i.pinimg.com/564x/1f/88/e3/1f88e33bcdaa1752a068d32d76cfa1b9.jpg" height=144 width=100><br>personal photo
+            </th>
+            <td rowspan= "1" colspan="2" style="padding-top: 10px; padding-left: 5px;">
+                <label>Name:<input name = "profile" size = "25" maxlength = "30"></label>
+                <br><label>Gender:
+                    <input type= "radio" name="Gender" value= "Male">Male
+                    <input type= "radio" name="Gender" value= "Female">Female
+                    <input type= "radio" name="Gender" value= "Other">Other
+                    </label>
+            </td>
+            <tr>
+            <td rowspan="1" style="padding-left: 5px;">
+                <label>County:
+                <form action="/action_page.php">
+                <select name = "grading">
+                    <option value= "Taipei">Taipei</option>
+                    <option value= "Tainan">Tainan</option>
+                    <option value= "Taichung">Taichung</option>
+                    <option value= "Taoyuan">Taoyuan</option>
+                </select>
+            </td>
+            <td>
+                <label>Birthday:<Input type="date"></label>
+            </td>
+            </tr>
+            <tr>
+            <td colspan="2" style="padding-left: 5px;">
+                <label>E-mail Adress:<input type="mail"></label>
+            </td>
+            </tr>
+            <tr>
+            <th>Hobby</th>
+            <td colspan="2"><form action = "/action_page.php" method= "get">
+                <input type="checkbox" name= "hooby" value="Swimming">Swimming
+                <input type="checkbox" name= "hooby" value="Volleyball">Volleyball
+                <input type="checkbox" name= "hooby" value="Movie">Movie
+                <input type="checkbox" name= "hooby" value="Game">Game
+                <input type="checkbox" name= "hooby" value="Sleep">Sleep
+            </td>
+            <tr>
+            <tr>
+            <th>Skill</th>
+            <td colspan="2"><form action = "/action_page.php" method= "get">
+                <input type="checkbox" name= "Skill" value="Java">Java
+                <input type="checkbox" name= "Skill" value="HTML">HTML
+                <input type="checkbox" name= "Skill" value="Pyhton">Pyhton
+                <input type="checkbox" name= "Skill" value="Microsoft Office">Microsoft Office
+                <input type="checkbox" name= "Skill" value="Premiere">Premiere
+            </td>
+            </tr>
+            <tr>
+            <th>Say Something</th>
+            <td colspan="2"><textarea rows = "4" cols="50">Say something here</textarea></td>
+            </tr>
+            </table>
+            <tr>
+            <th colspan = "3">
+                <input type="submit" value = "提交">
+                <input type="reset" value="重設">
+            </th>
+            </tr>
+        </form>
+
+            <p class="dott">Abcde</p>
+
+
 
 	<section id="contact">
+    <!-- =============== container end =============== -->
 	<!-- =============== container =============== -->
 		<div class="container">
 			    <div class="row">
