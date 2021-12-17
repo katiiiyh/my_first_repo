@@ -72,14 +72,13 @@ em{
         color: black;
 }
 .img1{
-        height: 300px;
-        margin-top: 50px; 
-        margin-bottom: 50px; 
-        border-style: double;
-        border-color: slateblue;
-        float: middle;
-}
+        height: 300px; 
+        position: relative;
+        top: 50px;
+        bottom: 50px;
+        left: 40%;
 
+}
 
 
 
