@@ -93,29 +93,29 @@
         <!-- =============== container-fluid =============== -->
     </nav>
     <!-- =============== header =============== -->
-    <section>>
-    <header id="home" class="header">
+    <section id="home" class="header">
 		<!-- =============== container =============== -->
-        <div class="container">
-        <br><br><br><br><br><br><br><br><br>
+    <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-        <form class="lab1" >
+        <div class="lab1" >
+        <form >
         <h1 style="color: orange;">Lab1</h1>
         <br>Plz fill out this form to help us improve our site
         <br>
             <label> Name:
-                <input name = "profile" size = "25" maxlength = "30">
+                <input name = "profile" size = "25" maxlength = "30" style="color: #000000">
             </label>
         <br>
             <label> Password:
-                <input name = "profile" type = "password" size = "25" maxlength = "30">
+                <input name = "profile" type = "password" size = "25" maxlength = "30" style="color: #000000" >
             </label>
         <br>Comments: 
-        <br><textarea rows = "4" cols="50">
+        <br><textarea rows = "4" cols="50" style="color: #000000">
             </textarea>
 
-        <br><label>E-mail Adress:<input type="mail"></label>
-        <br><label>Date:<Input type="date"></Input>
+        <br><label>E-mail Adress:<input type="mail" style="color: #000000"></label>
+        <br><label>Date:<Input type="date" ></Input>
         <br><b>Things you like:</b>
         <br><form action = "/action_page.php" method= "get">
             <input type="checkbox" name= "liked" value="links">Links
@@ -136,12 +136,13 @@
                 <option value= "5">5</option>
             </select>
         <br><br>
-            <input type="submit" value = "submit">
-            <input type="reset" value="clear">
-        </form></form>
-        </header>
-        <section>
-        <form class="lab2" >
+            <input type="submit" value = "submit" style="color: orange">
+            <input type="reset" value="clear" style="color: orange">
+        </form>
+    </div>
+
+        <div class="lab2"> 
+            <form>
             <h1 style="color: darkgray;">Lab2</h1>
             <label>Color:<input type = "color" autofocus /></label>
             <br><label>Date:<input type="date"></label>
@@ -158,12 +159,13 @@
         </div>  
 		<!-- =============== container end =============== -->		
     
-	<section id="about" class="header2">
+	<section id="about" >
     <!-- =============== container =============== -->
     <br><br><br><br><br><br>
 
     <table style="border:3px #cccccc solid; padding: 1em; margin-left: 50%;" >
-        <form>
+        <div>
+        <form >
         <tbody>
             <th style="background-color: orange; padding: 10px; " colspan="3">Profolio-109305077</th>
             <tr>
@@ -222,7 +224,6 @@
             <th>Say Something</th>
             <td colspan="2"><textarea rows = "4" cols="50">Say something here</textarea></td>
             </tr>
-            </table>
             <tr>
             <th colspan = "3">
                 <input type="submit" value = "提交">
@@ -230,8 +231,12 @@
             </th>
             </tr>
         </form>
-
-            <p class="dott">Abcde</p>
+        </table>
+    </div>
+    <br><br><br>
+        <div style="background-image: url('assets/img/gallery/emp-5.jpg'); width: 100%; height: 400px;" class="solid">
+            <img class="img1" src="assets/img/team-img1.jpg"  ></img>
+        </div>
 
 
 
@@ -279,8 +284,16 @@
     <footer id="footer">
 	<!-- =============== container =============== -->
     <div class="container">
-			    <div class="row">
+                <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6">
+
+                    <ul class="social-links">
+                        <li><a class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-name: fadeInUp;"><i class="fa fa-facebook"></i></a></li>
+                        <li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;"><i class="fa fa-twitter"></i></a></li>
+                        <li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a data-wow-delay=".4s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a data-wow-delay=".5s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
 
 					
                     <p class="copyright">
