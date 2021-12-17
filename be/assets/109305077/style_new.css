@@ -5,6 +5,7 @@ body {
     height: 100%;
     font-family: helvetica, sans-serif;
     font-size:14px;
+    ;
 } 
 h1 {
     font-family: impact, helvetica, sans-serif;
@@ -19,7 +20,11 @@ h3 {
     font-family: "andale mono", helvetica, sans-serif;
     font-size: ;
 }
-
+em{
+    color: rebeccapurple;
+    font-family: impact, helvetica, sans-serif;
+    font-size: 18px;
+}
 .dotted{
         border-style: dotted;
         padding: 1em;
@@ -31,7 +36,8 @@ h3 {
 }
 .solid {
         border-style: solid;
-        border-width: 3px;
+        border-width: 2px;
+        border-color: orange;
 }
 .double {
         border-style: double;
@@ -50,6 +56,9 @@ h3 {
         padding: 1em;
         width: 40%;
         margin-left: 150px;
+        float: left;
+        font-family: times, serif;
+
 }
 .lab2 {
         border-color: lightgray;
@@ -59,7 +68,16 @@ h3 {
         background-color: whitesmoke;
         width: 25%;
         margin-right: 150px;
-        text-align: middle;
+        float: right;
+        color: black;
+}
+.img1{
+        height: 300px;
+        margin-top: 50px; 
+        margin-bottom: 50px; 
+        border-style: double;
+        border-color: slateblue;
+        float: middle;
 }
 
 
