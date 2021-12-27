@@ -9,23 +9,53 @@
 <body>
 	<div id="block" class="bgstyle">
 	<h1>Guessing Game</h1>
-	<p style="color: grey; font-size: 15px; font-family:time new romance;">Your guess (1-100)</p>
-	<a type="button" value="Play" class="button" onclick="comparison()"></a>
-	<br>
-		<p style="float: left; position: relative;left:10%;">Result
-			<span id="result" class="result_form">
-			</span>
-		</p>
+	<p class="basic">Guess a number(1-100)</p>
+	<br><input type="number" id="guess" class="input_box">
+	<br><br><a><input type="button" value="Play" class="button" onclick="comparison()"></a>
+	<br><p style="float: left; position: relative;left:10%;">Result</p>
+	<table id="table"> 
+		<tr>
+		<th>
+		</th>
+		</tr>
+	</table>
 	</div>
-	<script>
-		var rand= Math.floor((Math.random()*100)+1)
-		var number;
-		number= document.prompt("Guess a number(1-10)"); 
-		while( number != rand){number= document.prompt("Try again! Guess a number(1-10)"); }
-		document.writeln("correct!")
+	<script type="text/javascript">
+		function comparison()
+			var guess_num = parseInt(document.getElementById('guess').value);
+			var rand= Math.floor((Math.random()*100)+1);
 
+			var max=100;
+			var min=0;
 
+		if(guess_num == rand){
+			window.prompt("Boom!")
+			location.reload();
+		}
+
+		var tr = document.createElement("tr");
+		var td = document.createElement("td");
+
+		while(guess_num != rand){
+			if(guess_num > rand){
+				if (guess_num < max){{max = input;}
+				var text = document.createTextNode(min+"-"+max) ;
+				td.appendChild(text) 
+				tr.appendChild(td); //加一列
+				document.getElementById('table').appendChild(tr);
+				break;}
+			}else if(guess_num < rand){
+				if (guess_num > min){{min = input;}
+			var text = document.createTextNode(min+"-"+max) ;
+				td.appendChild(text) 
+				tr.appendChild(td); 
+				document.getElementById('table').appendChild(tr);
+				break;}
+			}	
+		
+		
 	</script>
+	
 
 </body>
 </html>
