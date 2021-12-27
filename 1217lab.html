@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="style_new.css" type="text/css">
+</head>
+<body>
+	<div id="block" style="float:left; position:relative; left:40%;">
+		<h1 >JS Calculator</h1>
+			<form>
+				<label>Number 1</label>
+				<input type="number" id="num1" class="input_box">
+				<br>
+				<label>Number 2</label>
+				<input type="number" id="num2" class="input_box">
+				<br>
+				<label>Calculation</label>
+				<select id="cal_ans" name="method">
+					<option value="0">+</option>
+					<option value="1">-</option>
+					<option value="2">x</option>
+					<option value="3">/</option>
+				</select>
+			</form>
+		<input type="button" value="Count" class="cal_button" onclick="calculator()">
+		<p>Result=<span id="result"></span></p>
+	</div>
+	<script type="text/javascript">
+		function calculator() {
+			var n1 = parseInt(document.getElementById('num1').value);
+			var n2 = parseInt(document.getElementById('num2').value);
+			var operator = parseInt(document.getElementById('cal_ans').value)
+
+			if (operator == 0){
+				document.getElementById('result').innerHTML = n1+n2;
+			} else if (operator==1){
+				document.getElementById('result').innerHTML = n1-n2;
+			} else if (operator==2){
+				document.getElementById('result').innerHTML = n1*n3;
+			} else{
+				document.getElementById('result').innerHTML = n1/n2;
+			}
+		}
+	</script>
+
+
+
+
+</body>
+</html>
