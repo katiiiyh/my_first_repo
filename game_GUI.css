@@ -68,19 +68,27 @@ em{
 
 
 .input_box{
-        background-color: dimgray;
-        color: white ;
+        background-color: non;
+        color: black ;
 
 
 }
 .button{
         text-align: center;
-        background-color: darkcyan;
+        background-color: #fff1eb;
         font-size: 16px;
-        font-family: impact, sans-serif;
+        font-family: didot, serif;
         padding: 6px 36px;
         border-radius: 12px;
         border-style: none;
+}
+.button:hover{
+        background-color: cadetblue;
+        color: white;
+}
+.button:active{
+        background-color: black;
+        color: white;
 }
 .bgstyle{
         width: 30%;
@@ -91,12 +99,20 @@ em{
         background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);        
 
 }
-.result_form{
+.basic{
+        color: grey; 
+        font-size: 15px; 
+        font-family:time new romance;
+}
+.output_border{
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        background-color: whitesmoke;
+        width: 80%;
+        color: dimgrey;
 
 }
 
-a:hover{
-        color: white;
-}
 
 
