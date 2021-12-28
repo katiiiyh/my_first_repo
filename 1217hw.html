@@ -4,55 +4,57 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="game_GUI.css" type="text/css">
-	<title></title>
+	<title>Guessing Number</title>
 </head>
 <body>
 	<div id="block" class="bgstyle">
 	<h1>Guessing Game</h1>
 	<p class="basic">Guess a number(1-100)</p>
 	<br><input type="number" id="guess" class="input_box">
-	<br><br><a><input type="button" value="Play" class="button" onclick="comparison()"></a>
+	<br><br><a>
+		<input type="button" value="Play" class="button" onclick="guessing()">
+	</a>
 	<br><p style="float: left; position: relative;left:10%;">Result</p>
-	<table id="table"> 
-		<tr>
-		<th>
-		</th>
-		</tr>
+	<br><br>
+	<table id="table" class="output_border"> 
 	</table>
 	</div>
 	<script type="text/javascript">
-		function comparison()
-			var guess_num = parseInt(document.getElementById('guess').value);
-			var rand= Math.floor((Math.random()*100)+1);
+		var rand= Math.floor(Math.random()*99+1);
+		var max=100;
+		var min=0;
 
-			var max=100;
-			var min=0;
+		function guessing(){
+			var guess_num = parseInt(document.getElementById("guess").value);
 
-		if(guess_num == rand){
-			window.prompt("Boom!")
-			location.reload();
-		}
+			if(guess_num == rand){
+				alert("Boom!")
+				location.reload();
+			}
 
-		var tr = document.createElement("tr");
-		var td = document.createElement("td");
+			let tr = document.createElement("tr");
+			let td = document.createElement("td");
 
-		while(guess_num != rand){
-			if(guess_num > rand){
-				if (guess_num < max){{max = input;}
-				var text = document.createTextNode(min+"-"+max) ;
-				td.appendChild(text) 
-				tr.appendChild(td); //加一列
-				document.getElementById('table').appendChild(tr);
-				break;}
-			}else if(guess_num < rand){
-				if (guess_num > min){{min = input;}
-			var text = document.createTextNode(min+"-"+max) ;
-				td.appendChild(text) 
-				tr.appendChild(td); 
-				document.getElementById('table').appendChild(tr);
-				break;}
+			if(guess_num != rand){
+				if(guess_num > rand){
+					if (guess_num < max){max = guess_num;}
+					let text = document.createTextNode(min+"-"+max);
+
+					td.appendChild(text); 
+					tr.appendChild(td); //加一列
+					document.getElementById("table").appendChild(tr);
+
+
+				}else if(guess_num < rand){
+					if (guess_num > min){min = guess_num;}
+					let text = document.createTextNode(min+"-"+max);
+
+					td.appendChild(text) 
+					tr.appendChild(td); 
+					document.getElementById("table").appendChild(tr);
+				}
 			}	
-		
+		}
 		
 	</script>
 	
