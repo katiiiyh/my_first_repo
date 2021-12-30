@@ -1,0 +1,17 @@
+.button{
+        text-align: center;
+        background-color: indianred;
+        color: white;
+        font-size: 16px;
+        font-family: didot, serif;
+        padding: 6px 36px;
+        border-radius: 12px;
+        border-style: none;
+        float: left;
+        position: relative;
+        left: 12%;
+
+}
+.button:hover{
+        background-color: black;
+        color: white;
