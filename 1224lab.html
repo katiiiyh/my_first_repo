@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<p id="r1"></p>
+<p id="r2"></p>
+<p id="r3"></p>
+
+
+<script type="text/javascript">
+	var data = prompt("input data");
+	var search = prompt("input a char to search");
+
+	document.getElementById("r1").innerHTML = data.indexOf(search);
+	document.getElementById("r2").innerHTML = data.lastIndexOf(search);
+	document.getElementById("r3").innerHTML = data.indexOf(search,3);
+
+</script>
+
+
+</body>
+</html>
